@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="timer-container">
+
+<h2>Countdown Timer</h2>
+
+<input type="number" id="inputTime" placeholder="Enter seconds">
+
+<div class="circle">
+<svg>
+<circle cx="90" cy="90" r="80"></circle>
+<circle cx="90" cy="90" r="80" id="progress"></circle>
+</svg>
+
+<div id="display">00</div>
+</div>
+
+<div class="buttons">
+<button onclick="startTimer()">Start</button>
+<button onclick="pauseTimer()">Pause</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
